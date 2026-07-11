@@ -1,0 +1,38 @@
+/* ==========================================================================
+   contact.css
+   ========================================================================== */
+
+.contact-hero { padding-top: calc(var(--space-10) + var(--space-5)); padding-bottom: var(--space-7); }
+.contact-hero h1 { max-width: 16ch; margin-block: var(--space-5); }
+.contact-hero .lead { max-width: 56ch; }
+
+.contact-body { border-top: 1px solid var(--border-subtle); padding-top: var(--space-8); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-7); }
+.contact-card {
+  padding: var(--space-8);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.contact-email {
+  font-family: var(--font-display);
+  font-size: var(--fs-3);
+  color: var(--accent);
+  word-break: break-word;
+}
+.contact-email:hover { text-decoration: underline; }
+.contact-card p { color: var(--text-secondary); font-size: var(--fs-small); }
+.contact-list { display: flex; flex-direction: column; gap: var(--space-3); }
+.contact-list li {
+  font-size: var(--fs-small);
+  color: var(--text-secondary);
+  padding-left: var(--space-5);
+  position: relative;
+}
+.contact-list li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+
+@media (max-width: 720px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}

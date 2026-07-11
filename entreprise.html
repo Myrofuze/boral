@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-motion="normal" data-fx="on">
+<head>
+<script src="brand.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entreprise — __BRAND__</title>
+<meta name="description" data-brand-attr="content" content="__BRAND__ est un écosystème de R&D qui transforme les contraintes physiques extrêmes en architectures fonctionnelles. Origine, philosophie et méthode.">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="entreprise.css">
+</head>
+<body>
+
+<div class="thermal-halo" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+      <span data-brand>BORAL</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html" aria-current="page">Entreprise</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn settings-trigger" aria-expanded="false" aria-controls="settings-panel" aria-label="Réglages d'affichage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-panel-title">Affichage</div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Mode clair</div></div>
+      <button class="switch" data-switch="theme" role="switch" aria-checked="false" aria-label="Activer le mode clair"></button>
+    </div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Réduire les animations</div></div>
+      <button class="switch" data-switch="motion" role="switch" aria-checked="false" aria-label="Réduire les animations"></button>
+    </div>
+    <div class="settings-row">
+      <div>
+        <div class="settings-row-label">Éléments 3D / effets</div>
+        <div class="settings-row-desc">Désactive l'objet interactif et le halo</div>
+      </div>
+      <button class="switch" data-switch="fx" role="switch" aria-checked="true" aria-label="Activer les effets"></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigation mobile">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="entreprise.html">Entreprise</a></li>
+    <li><a href="technologies.html">Technologies</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <!-- ============ INTRO ============ -->
+  <section class="ent-hero">
+    <div class="wrap">
+      <p class="eyebrow hero-anim-1">Entreprise</p>
+      <h1 class="hero-anim-2">Un écosystème de recherche qui prend les lois de la physique au pied de la lettre</h1>
+      <p class="lead hero-anim-3"><span data-brand>BORAL</span> réunit ingénierie aérospatiale, mécanique des fluides et intelligence embarquée autour d'une conviction simple&nbsp;: les contraintes physiques les plus dures ne sont pas des obstacles à contourner, mais des ressources mal exploitées.</p>
+    </div>
+  </section>
+
+  <!-- ============ ORIGINE ============ -->
+  <section class="narrative">
+    <div class="wrap wrap-narrow">
+      <div data-reveal>
+        <p class="eyebrow">Origine</p>
+        <h2>Pourquoi <span data-brand>BORAL</span> existe</h2>
+        <p><span data-brand>BORAL</span> est né d'un constat récurrent dans l'ingénierie de systèmes complexes&nbsp;: chaque domaine — aéronautique, sous-marin, spatial — développe ses solutions en vase clos, en traitant la frontière avec les autres milieux comme une limite infranchissable plutôt que comme un problème d'ingénierie à part entière. Un drone aérien s'arrête à la surface de l'eau. Un véhicule sous-marin ne quitte jamais son fluide. Un vaisseau spatial subit sa propre exposition thermique au lieu de s'en servir.</p>
+        <p><span data-brand>BORAL</span> a été construit pour occuper précisément ces frontières&nbsp;: les transitions entre milieux, les gradients qu'on cherche habituellement à isoler plutôt qu'à exploiter, les compromis que l'industrie considère comme définitifs. Ce positionnement n'est pas une posture marketing — c'est un fil conducteur technique qui structure la conception de chaque système, de la cellule d'un drone amphibie jusqu'à l'architecture thermique d'un vaisseau lunaire.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PHILOSOPHIE ============ -->
+  <section class="narrative narrative-alt">
+    <div class="wrap wrap-narrow">
+      <div data-reveal>
+        <p class="eyebrow">Philosophie</p>
+        <h2>La contrainte comme matériau de conception</h2>
+        <p>La plupart des architectures techniques traitent une contrainte physique — la chaleur, la pression, la densité — comme une charge à minimiser. <span data-brand>BORAL</span> part de l'hypothèse inverse&nbsp;: une contrainte suffisamment bien comprise devient un composant du système. La chaleur solaire qui menace de faire bouillir un ergol cryogénique peut devenir la source d'énergie d'un moteur Stirling. La différence de densité entre l'air et l'eau, qui détruit la plupart des systèmes hybrides, peut être pilotée par un embrayage magnétique plutôt que subie.</p>
+        <p>Cette approche impose une discipline&nbsp;: chiffrer avant d'esthétiser, documenter les incertitudes avec la même rigueur que les résultats, et accepter qu'un projet de recherche avancée conserve des zones de risque identifiées plutôt que dissimulées. C'est cette honnêteté technique — visible sur chaque page projet de ce site, limites incluses — qui distingue une démonstration de faisabilité d'une promesse commerciale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOMAINES ============ -->
+  <section class="domains">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Domaines de travail</p>
+        <h2>Quatre terrains, une même méthode</h2>
+      </div>
+      <div class="domain-grid">
+        <article class="domain-card" data-reveal>
+          <span class="mono domain-num">01</span>
+          <h3>Aérien longue endurance</h3>
+          <p>Ailes volantes optimisées pour la finesse aérodynamique et l'autonomie extrême, avec contrôle actif de la couche limite et architectures haute tension basse perte.</p>
+        </article>
+        <article class="domain-card" data-reveal>
+          <span class="mono domain-num">02</span>
+          <h3>Systèmes trans-médium</h3>
+          <p>Vecteurs capables de transitionner activement entre l'air et l'eau — propulsion coaxiale, étanchéité modulaire, gestion dynamique du centre de gravité.</p>
+        </article>
+        <article class="domain-card" data-reveal>
+          <span class="mono domain-num">03</span>
+          <h3>Essaims et intelligence distribuée</h3>
+          <p>Architectures multi-agents à intelligence déportée&nbsp;: un hub de calcul centralisé pilote une flotte de vecteurs légers via des réseaux de communication hiérarchiques.</p>
+        </article>
+        <article class="domain-card" data-reveal>
+          <span class="mono domain-num">04</span>
+          <h3>Énergie et gestion thermique</h3>
+          <p>De la cryogénie spatiale au refroidissement personnel, la même science des flux thermiques appliquée à des échelles radicalement différentes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÉTHODE DÉTAILLÉE ============ -->
+  <section class="narrative">
+    <div class="wrap wrap-narrow">
+      <div data-reveal>
+        <p class="eyebrow">Méthode</p>
+        <h2>Comment un projet <span data-brand>BORAL</span> prend forme</h2>
+      </div>
+      <div class="method-detail">
+        <div class="method-detail-item" data-reveal>
+          <span class="mono">§1 — Cadrage physique</span>
+          <p>Avant toute conception, la contrainte dominante du projet est isolée et quantifiée&nbsp;: densité, pression, gradient thermique, budget énergétique. Cette étape détermine ce qui est réellement possible avant que la forme ne soit dessinée.</p>
+        </div>
+        <div class="method-detail-item" data-reveal>
+          <span class="mono">§2 — Architecture et chiffrage</span>
+          <p>Les sous-systèmes sont définis par fonction (propulsion, calcul, communication, structure) et strictement chiffrés — masse, puissance, coût. Les hypothèses non validées expérimentalement sont marquées comme telles plutôt que présentées comme acquises.</p>
+        </div>
+        <div class="method-detail-item" data-reveal>
+          <span class="mono">§3 — Prototypage itératif</span>
+          <p>Fabrication additive pour les géométries complexes, usinage pour les pièces à haute contrainte mécanique. Chaque itération est documentée, y compris — surtout — celles qui échouent.</p>
+        </div>
+        <div class="method-detail-item" data-reveal>
+          <span class="mono">§4 — Validation et transparence des limites</span>
+          <p>Un projet <span data-brand>BORAL</span> n'est jamais présenté comme achevé tant que ses risques n'ont pas été classés et ses zones d'incertitude explicitées. C'est une condition de crédibilité, pas une formalité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="closing">
+    <div class="wrap">
+      <div class="closing-box" data-reveal>
+        <h2>Voir la méthode à l'œuvre</h2>
+        <p class="lead">Chaque projet documente son architecture, ses chiffres et ses limites.</p>
+        <a href="projets.html" class="btn btn-primary">Explorer les projets
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <div class="footer-mark">
+        <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+        <span><span data-brand>BORAL</span> © <span data-year></span></span>
+      </div>
+      <p class="footer-tagline">Simulating the future. Building it today.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation de pied de page">
+      <a href="entreprise.html">Entreprise</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="scroll-reveal.js"></script>
+</body>
+</html>

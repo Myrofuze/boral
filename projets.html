@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-motion="normal" data-fx="on">
+<head>
+<script src="brand.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — __BRAND__</title>
+<meta name="description" data-brand-attr="content" content="VOLTIGE, ASTRAL, SWARM, SUNDIAL, AquaCool, Albatros : les projets de recherche et développement de __BRAND__, du plus avancé au plus futuriste.">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="projets.css">
+</head>
+<body class="projets-body">
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+      <span data-brand>BORAL</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn settings-trigger" aria-expanded="false" aria-controls="settings-panel" aria-label="Réglages d'affichage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-panel-title">Affichage</div>
+    <div class="settings-row"><div><div class="settings-row-label">Mode clair</div></div><button class="switch" data-switch="theme" role="switch" aria-checked="false" aria-label="Activer le mode clair"></button></div>
+    <div class="settings-row"><div><div class="settings-row-label">Réduire les animations</div></div><button class="switch" data-switch="motion" role="switch" aria-checked="false" aria-label="Réduire les animations"></button></div>
+    <div class="settings-row"><div><div class="settings-row-label">Éléments 3D / effets</div><div class="settings-row-desc">Désactive l'objet interactif et le halo</div></div><button class="switch" data-switch="fx" role="switch" aria-checked="true" aria-label="Activer les effets"></button></div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigation mobile">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="entreprise.html">Entreprise</a></li>
+    <li><a href="technologies.html">Technologies</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main" class="carousel-main">
+
+  <div class="carousel" id="carousel" data-index="0">
+
+    <article class="slide is-active" data-slide="0" style="--slide-accent: 184,137,90;">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content wrap">
+        <span class="slide-count mono">01 / 06</span>
+        <div class="status-badge status-actif">En développement</div>
+        <h2 class="slide-title">AquaCool<br>Personal</h2>
+        <p class="slide-tag mono">Climatisation individuelle sans compresseur</p>
+        <p class="slide-desc">Refroidissement passif par eau glacée, sans gaz frigorigène ni bruit de compresseur. COP&nbsp;6.2 en première heure pour 40&nbsp;W consommés.</p>
+        <div class="slide-stats">
+          <div><span>6.2</span><small>COP en 1h</small></div>
+          <div><span>40 W</span><small>Consommation</small></div>
+          <div><span>25–30 dB</span><small>Niveau sonore</small></div>
+        </div>
+        <a href="aquacool.html" class="btn btn-primary">Voir le projet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="slide" data-slide="1" style="--slide-accent: 46,90,140;">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content wrap">
+        <span class="slide-count mono">02 / 06</span>
+        <div class="status-badge status-recherche">Recherche &amp; développement</div>
+        <h2 class="slide-title">VOLTIGE</h2>
+        <p class="slide-tag mono">Drone hybride air / eau — HELIX</p>
+        <p class="slide-desc">Vol à plus de 130&nbsp;km/h, plongée active jusqu'à 20&nbsp;m. Propulsion coaxiale, architecture de calcul distribuée à trois niveaux.</p>
+        <div class="slide-stats">
+          <div><span>3,1 kg</span><small>Masse au décollage</small></div>
+          <div><span>4h30</span><small>Autonomie</small></div>
+          <div><span>20 m</span><small>Profondeur</small></div>
+        </div>
+        <a href="voltige.html" class="btn btn-primary">Voir le projet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="slide" data-slide="2" style="--slide-accent: 184,137,90;">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content wrap">
+        <span class="slide-count mono">03 / 06</span>
+        <div class="status-badge status-recherche">Recherche &amp; développement</div>
+        <h2 class="slide-title">ASTRAL</h2>
+        <p class="slide-tag mono">Aile volante haute altitude, longue endurance</p>
+        <p class="slide-desc">Aspiration active de la couche limite, architecture 14S ultra-haute tension. 963&nbsp;km franchissables sur une seule charge.</p>
+        <div class="slide-stats">
+          <div><span>11,1 kg</span><small>Masse totale</small></div>
+          <div><span>6h25</span><small>Autonomie max</small></div>
+          <div><span>963 km</span><small>Distance franchissable</small></div>
+        </div>
+        <a href="astral.html" class="btn btn-primary">Voir le projet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="slide" data-slide="3" style="--slide-accent: 46,90,140;">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content wrap">
+        <span class="slide-count mono">04 / 06</span>
+        <div class="status-badge status-recherche">Conception initiale</div>
+        <h2 class="slide-title">SWARM</h2>
+        <p class="slide-tag mono">Système multi-drones autonome</p>
+        <p class="slide-desc">Cartographie collaborative de zones sinistrées par essaim de drones légers, coordonnés via une architecture de communication pyramidale.</p>
+        <div class="slide-stats">
+          <div><span>10×10 cm</span><small>Corps replié</small></div>
+          <div><span>×5</span><small>Drones / chef d'essaim</small></div>
+          <div><span>∞</span><small>Scalabilité réseau</small></div>
+        </div>
+        <a href="swarm.html" class="btn btn-primary">Voir le projet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="slide" data-slide="4" style="--slide-accent: 184,137,90;">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content wrap">
+        <span class="slide-count mono">05 / 06</span>
+        <div class="status-badge status-recherche">Conception</div>
+        <h2 class="slide-title">Albatros</h2>
+        <p class="slide-tag mono">Hub de calcul déporté — Projet FOCAL</p>
+        <p class="slide-desc">Boîtier de calcul IA portable qui centralise l'intelligence de l'écosystème <span data-brand>BORAL</span> et la distribue en temps réel à l'ensemble des vecteurs déployés.</p>
+        <div class="slide-stats">
+          <div><span>~1 kg</span><small>Masse du boîtier</small></div>
+          <div><span>275 TOPS</span><small>Calcul IA</small></div>
+          <div><span>Hot-swap</span><small>Continuité</small></div>
+        </div>
+        <a href="albatros.html" class="btn btn-primary">Voir le projet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <article class="slide" data-slide="5" style="--slide-accent: 46,90,140;">
+      <div class="slide-bg" aria-hidden="true"></div>
+      <div class="slide-content wrap">
+        <span class="slide-count mono">06 / 06</span>
+        <div class="status-badge status-concept">Concept futur — pré-étude ESA OSIP</div>
+        <h2 class="slide-title">SUNDIAL</h2>
+        <p class="slide-tag mono">Énergie thermique active pour cryogénie spatiale</p>
+        <p class="slide-desc">La coque d'un vaisseau lunaire devient collecteur thermique. Moteurs Stirling linéaires, suppression du boil-off cryogénique.</p>
+        <div class="slide-stats">
+          <div><span>142 kW</span><small>Surplus net</small></div>
+          <div><span>1 720 m²</span><small>Surface collectrice</small></div>
+          <div><span>0 kg</span><small>Masse ajoutée collecteur</small></div>
+        </div>
+        <a href="sundial.html" class="btn btn-primary">Voir le projet
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  <button class="carousel-arrow carousel-arrow-prev" id="carouselPrev" aria-label="Projet précédent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="carousel-arrow carousel-arrow-next" id="carouselNext" aria-label="Projet suivant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+
+  <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Sélection du projet">
+    <button class="carousel-dot is-active" data-goto="0" role="tab" aria-selected="true" aria-label="AquaCool Personal"></button>
+    <button class="carousel-dot" data-goto="1" role="tab" aria-selected="false" aria-label="VOLTIGE"></button>
+    <button class="carousel-dot" data-goto="2" role="tab" aria-selected="false" aria-label="ASTRAL"></button>
+    <button class="carousel-dot" data-goto="3" role="tab" aria-selected="false" aria-label="SWARM"></button>
+    <button class="carousel-dot" data-goto="4" role="tab" aria-selected="false" aria-label="Albatros"></button>
+    <button class="carousel-dot" data-goto="5" role="tab" aria-selected="false" aria-label="SUNDIAL"></button>
+  </div>
+
+  <p class="carousel-hint mono">Utilisez les flèches — ← →</p>
+
+</main>
+
+<script src="main.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>

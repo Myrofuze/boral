@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-motion="normal" data-fx="on">
+<head>
+<script src="brand.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technologies — __BRAND__</title>
+<meta name="description" data-brand-attr="content" content="Intelligence déportée, vecteurs spécialisés, maîtrise énergétique et thermique : les trois piliers technologiques transverses de l'écosystème __BRAND__.">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="technologies.css">
+</head>
+<body>
+
+<div class="thermal-halo" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+      <span data-brand>BORAL</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="technologies.html" aria-current="page">Technologies</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn settings-trigger" aria-expanded="false" aria-controls="settings-panel" aria-label="Réglages d'affichage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-panel-title">Affichage</div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Mode clair</div></div>
+      <button class="switch" data-switch="theme" role="switch" aria-checked="false" aria-label="Activer le mode clair"></button>
+    </div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Réduire les animations</div></div>
+      <button class="switch" data-switch="motion" role="switch" aria-checked="false" aria-label="Réduire les animations"></button>
+    </div>
+    <div class="settings-row">
+      <div>
+        <div class="settings-row-label">Éléments 3D / effets</div>
+        <div class="settings-row-desc">Désactive l'objet interactif et le halo</div>
+      </div>
+      <button class="switch" data-switch="fx" role="switch" aria-checked="true" aria-label="Activer les effets"></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigation mobile">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="entreprise.html">Entreprise</a></li>
+    <li><a href="technologies.html">Technologies</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <section class="tech-hero">
+    <div class="wrap">
+      <p class="eyebrow hero-anim-1">Technologies</p>
+      <h1 class="hero-anim-2">Trois piliers, appliqués à tous les projets</h1>
+      <p class="lead hero-anim-3">L'intelligence est centralisée. L'action est distribuée sur des vecteurs spécialisés. L'énergie est récupérée plutôt que dissipée. Cette grille de lecture traverse l'ensemble de l'écosystème <span data-brand>BORAL</span>.</p>
+    </div>
+  </section>
+
+  <!-- ============ PILIER 1 — CERVEAU ============ -->
+  <section class="tech-pillar" id="cerveau">
+    <div class="wrap">
+      <div class="tech-pillar-grid">
+        <div data-reveal>
+          <span class="mono tech-pillar-num">01</span>
+          <p class="eyebrow">Intelligence déportée</p>
+          <h2>Le cerveau — calcul centralisé, action distribuée</h2>
+          <p class="lead" style="max-width:none;">Dans une architecture classique, chaque vecteur embarque son propre calculateur lourd — coûteux, gourmand en énergie, redondant à l'échelle d'une flotte. <span data-brand>BORAL</span> inverse cette logique avec une architecture Hub&nbsp;&amp;&nbsp;Spoke&nbsp;: un nœud de calcul central encaisse les traitements lourds et les distribue en temps réel aux vecteurs sur le terrain.</p>
+          <div class="tech-detail-list">
+            <div class="tech-detail-item">
+              <h3>Boîtier de calcul portable</h3>
+              <p>Un module compact (~1&nbsp;kg) embarque une puce de calcul IA industrielle délivrant plusieurs centaines de TOPS — de quoi traiter reconnaissance d'objets, calcul de trajectoires et coordination d'essaim en temps réel.</p>
+            </div>
+            <div class="tech-detail-item">
+              <h3>Liaison temps réel multi-réseaux</h3>
+              <p>Transmission vers les vecteurs déployés via un lien sans fil combinant radio, 4G/5G et relais satellite de secours, avec bascule automatique selon les conditions du terrain.</p>
+            </div>
+            <div class="tech-detail-item">
+              <h3>Continuité de mission</h3>
+              <p>Système d'alimentation interchangeable à chaud pour ne jamais interrompre une mission en cours — une contrainte opérationnelle traitée comme un problème d'architecture, pas comme un détail d'intendance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-pillar-visual" data-reveal>
+          <div class="trl-gauge">
+            <p class="eyebrow" style="margin-bottom:var(--space-4);">Maturité par sous-système</p>
+            <div class="trl-gauge-row"><span class="trl-gauge-label">Calcul embarqué IA</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:88%"></div></div><span class="trl-gauge-value">8/9</span></div>
+            <div class="trl-gauge-row"><span class="trl-gauge-label">Liaison multi-réseaux</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:75%"></div></div><span class="trl-gauge-value">6/9</span></div>
+            <div class="trl-gauge-row"><span class="trl-gauge-label">Coordination d'essaim</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:44%"></div></div><span class="trl-gauge-value">4/9</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILIER 2 — VECTEURS ============ -->
+  <section class="tech-pillar tech-pillar-alt" id="vecteurs">
+    <div class="wrap">
+      <div class="tech-pillar-grid tech-pillar-grid-rev">
+        <div class="tech-pillar-visual" data-reveal>
+          <div class="vector-compare">
+            <div class="vector-compare-row">
+              <span class="mono">ASTRAL</span>
+              <span>Haute altitude, endurance extrême</span>
+            </div>
+            <div class="vector-compare-row">
+              <span class="mono">VOLTIGE</span>
+              <span>Trans-médium air / eau</span>
+            </div>
+            <div class="vector-compare-row">
+              <span class="mono">SWARM</span>
+              <span>Essaim tactique, couverture de zone</span>
+            </div>
+          </div>
+        </div>
+        <div data-reveal>
+          <span class="mono tech-pillar-num">02</span>
+          <p class="eyebrow">Vecteurs spécialisés</p>
+          <h2>Les muscles — un profil par mission</h2>
+          <p class="lead" style="max-width:none;">Plutôt qu'un compromis générique, chaque contrainte opérationnelle appelle une architecture dédiée. <span data-brand>BORAL</span> déploie trois profils de vecteurs, chacun optimisé pour un jeu de contraintes physiques distinct.</p>
+          <div class="tech-detail-list">
+            <div class="tech-detail-item">
+              <h3>Endurance — ASTRAL</h3>
+              <p>Aile volante 100&nbsp;% électrique optimisée pour la finesse aérodynamique&nbsp;: aspiration active de la couche limite, architecture haute tension basse perte, plus de 6&nbsp;heures d'autonomie continue.</p>
+            </div>
+            <div class="tech-detail-item">
+              <h3>Trans-médium — VOLTIGE</h3>
+              <p>Propulsion coaxiale à double hélice couplée par embrayage magnétique, permettant une transition active entre vol aérien et navigation sous-marine sans rupture mécanique.</p>
+            </div>
+            <div class="tech-detail-item">
+              <h3>Essaim — SWARM</h3>
+              <p>Architecture de communication pyramidale permettant la coordination d'un nombre quasi illimité de vecteurs légers sans saturer le réseau, au-delà des limites classiques du WiFi/Bluetooth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILIER 3 — ÉNERGIE ============ -->
+  <section class="tech-pillar" id="energie">
+    <div class="wrap">
+      <div class="tech-pillar-grid">
+        <div data-reveal>
+          <span class="mono tech-pillar-num">03</span>
+          <p class="eyebrow">Maîtrise énergétique</p>
+          <h2>L'énergie — récupérer plutôt que dissiper</h2>
+          <p class="lead" style="max-width:none;">La même science des flux thermiques s'applique à des échelles radicalement différentes&nbsp;: transformer une contrainte thermique en ressource exploitable, qu'il s'agisse de la coque d'un vaisseau lunaire ou d'un poste de travail en été.</p>
+          <div class="tech-detail-list">
+            <div class="tech-detail-item">
+              <h3>Échelle spatiale — SUNDIAL</h3>
+              <p>Étude de pré-faisabilité pour missions lunaires longue durée&nbsp;: la coque du vaisseau devient collecteur thermique actif via des micro-canaux gravés dans la peau externe, alimentant des moteurs Stirling à pistons linéaires.</p>
+            </div>
+            <div class="tech-detail-item">
+              <h3>Échelle personnelle — AquaCool</h3>
+              <p>Climatisation individuelle sans compresseur, basée sur la chaleur latente de fusion de l'eau glacée&nbsp;: même logique de récupération thermique, appliquée à un poste de travail.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-pillar-visual" data-reveal>
+          <div class="trl-gauge">
+            <p class="eyebrow" style="margin-bottom:var(--space-4);">Maturité par sous-système</p>
+            <div class="trl-gauge-row"><span class="trl-gauge-label">Moteurs Stirling linéaires</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:70%"></div></div><span class="trl-gauge-value">6/9</span></div>
+            <div class="trl-gauge-row"><span class="trl-gauge-label">Collecteur micro-canaux</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:33%"></div></div><span class="trl-gauge-value">3/9</span></div>
+            <div class="trl-gauge-row"><span class="trl-gauge-label">Refroidissement passif</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:80%"></div></div><span class="trl-gauge-value">7/9</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="closing">
+    <div class="wrap">
+      <div class="closing-box" data-reveal>
+        <h2>Voir ces technologies appliquées</h2>
+        <p class="lead">Chaque pilier se retrouve, chiffré et documenté, dans les projets <span data-brand>BORAL</span>.</p>
+        <a href="projets.html" class="btn btn-primary">Explorer les projets
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <div class="footer-mark">
+        <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+        <span><span data-brand>BORAL</span> © <span data-year></span></span>
+      </div>
+      <p class="footer-tagline">Simulating the future. Building it today.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation de pied de page">
+      <a href="entreprise.html">Entreprise</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="scroll-reveal.js"></script>
+</body>
+</html>

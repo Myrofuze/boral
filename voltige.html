@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-motion="normal" data-fx="on">
+<head>
+<script src="brand.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLTIGE — Drone trans-médium air/eau — __BRAND__</title>
+<meta name="description" content="VOLTIGE est un drone hybride de 3,1 kg capable de voler à plus de 130 km/h puis de plonger jusqu'à 20 m grâce au système de propulsion coaxial HELIX.">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="projet-detail.css">
+</head>
+<body>
+
+<div class="thermal-halo" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+      <span data-brand>BORAL</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn settings-trigger" aria-expanded="false" aria-controls="settings-panel" aria-label="Réglages d'affichage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-panel-title">Affichage</div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Mode clair</div></div>
+      <button class="switch" data-switch="theme" role="switch" aria-checked="false" aria-label="Activer le mode clair"></button>
+    </div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Réduire les animations</div></div>
+      <button class="switch" data-switch="motion" role="switch" aria-checked="false" aria-label="Réduire les animations"></button>
+    </div>
+    <div class="settings-row">
+      <div>
+        <div class="settings-row-label">Éléments 3D / effets</div>
+        <div class="settings-row-desc">Désactive l'objet interactif et le halo</div>
+      </div>
+      <button class="switch" data-switch="fx" role="switch" aria-checked="true" aria-label="Activer les effets"></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigation mobile">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="entreprise.html">Entreprise</a></li>
+    <li><a href="technologies.html">Technologies</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <div class="proj-breadcrumb">
+    <div class="wrap">
+      <nav aria-label="Fil d'ariane">
+        <a href="projets.html">Projets</a><span>/</span><span>VOLTIGE</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="proj-detail-hero">
+    <div class="wrap project-body">
+      <div>
+        <div class="status-badge status-recherche">Recherche &amp; développement</div>
+        <h1>VOLTIGE</h1>
+        <p class="proj-detail-tagline">Le premier vecteur qui ne choisit pas entre l'air et l'eau.</p>
+        <p class="lead">VOLTIGE est un drone hybride de 3,1&nbsp;kg capable d'évoluer dans l'air à plus de 130&nbsp;km/h puis de plonger activement jusqu'à 20&nbsp;mètres de profondeur, sans changer de plateforme ni d'opérateur. Là où un drone aérien classique tombe en panne au contact de l'eau et où un véhicule sous-marin ne quitte jamais son fluide, VOLTIGE transitionne entre les deux milieux comme une manœuvre pilotée plutôt que comme un accident.</p>
+
+        <div class="proj-hero-stats">
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">3,1 kg</span><span class="proj-hero-stat-label">Masse au décollage</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">4h30</span><span class="proj-hero-stat-label">Autonomie de vol</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">20 m</span><span class="proj-hero-stat-label">Profondeur de plongée</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">497 km</span><span class="proj-hero-stat-label">Distance franchissable</span></div>
+        </div>
+      </div>
+      <aside class="specs-rail">
+        <div class="specs-rail-block" data-spec-for="vision"><span class="specs-rail-label">Nom de code</span><span class="specs-rail-value">OMEGA 05</span></div>
+        <div class="specs-rail-block" data-spec-for="fonctionnement"><span class="specs-rail-label">Vitesse de croisière</span><span class="specs-rail-value">110–135 <small>km/h</small></span></div>
+        <div class="specs-rail-block" data-spec-for="architecture"><span class="specs-rail-label">Calcul embarqué</span><span class="specs-rail-value">115 <small>TOPS</small></span></div>
+        <div class="specs-rail-block" data-spec-for="donnees"><span class="specs-rail-label">Finesse aérodynamique</span><span class="specs-rail-value">≈ 21</span></div>
+        <div class="specs-rail-block" data-spec-for="limites"><span class="specs-rail-label">Rapport densité air/eau</span><span class="specs-rail-value">1 : 814</span></div>
+        <div class="specs-rail-block" data-spec-for="timeline"><span class="specs-rail-label">Stade</span><span class="specs-rail-value" style="font-size:1rem;">Conception avancée</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ VISION (vulgarisé) ============ -->
+  <section class="proj-section" data-spec-section="vision">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <div class="reading-level"><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span> Niveau de lecture — accessible</div>
+      <p class="eyebrow">Vision</p>
+      <h2>Pourquoi un drone doit-il choisir son milieu&nbsp;?</h2>
+      <p>Le marché des drones grand public — DJI, Autel, Parrot — excelle en photographie et cartographie aériennes, avec des autonomies de 25 à 35&nbsp;minutes. Mais au contact de l'eau, ces systèmes tombent en panne immédiatement. À l'autre extrémité, les véhicules sous-marins professionnels comme le BlueROV2 explorent les profondeurs avec précision, sans jamais quitter leur fluide — et coûtent entre 5&nbsp;000 et 50&nbsp;000&nbsp;€.</p>
+      <p>Un projet de recherche du MIT, LOON COPTER, a démontré dès 2015 la faisabilité technique d'une transition air-eau contrôlée. Ce prototype de laboratoire n'a cependant jamais dépassé le stade académique. VOLTIGE reprend cette frontière technique et la pousse vers une architecture réellement opérationnelle&nbsp;: un vecteur unique, autonome, capable de surveiller une zone côtière depuis les airs puis de plonger pour en inspecter le fond, sans rupture de mission.</p>
+    </div>
+  </section>
+
+  <!-- ============ ÉTAT DE L'ART ============ -->
+  <section class="proj-section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">État de l'art</p>
+        <h2>Ce que les solutions existantes ne permettent pas</h2>
+        <p class="lead">Aucune solution actuelle ne combine transition dynamique air-eau, continuité de mission et intégration complète des données multi-environnementales en temps réel.</p>
+      </div>
+      <div class="data-table-wrap" data-reveal>
+        <table class="data-table">
+          <thead>
+            <tr><th>Critère</th><th>ROV sous-marin classique</th><th>Drone aérien classique</th><th>VOLTIGE</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Milieu d'évolution</td><td>Aquatique exclusif</td><td>Atmosphérique exclusif</td><td>Trans-médium (air + eau)</td></tr>
+            <tr><td>Transition de milieu</td><td>Impossible</td><td>Impossible (destruction immédiate)</td><td>Active, assistée par IA</td></tr>
+            <tr><td>Vitesse maximale</td><td>3 à 9 km/h</td><td>60 à 140 km/h</td><td>&gt;220 km/h (air) / ≈22 km/h (eau)</td></tr>
+            <tr><td>Autonomie</td><td>Câblé ou &lt;2 h</td><td>≈20–45 min</td><td>4h30 (497 km à 120 km/h)</td></tr>
+            <tr><td>Prix indicatif</td><td>5 000 – 50 000 €</td><td>500 – 3 500 €</td><td>≈7 000 € (dégressif)</td></tr>
+            <tr><td>Intelligence embarquée</td><td>Basique</td><td>Standard (GPS, évitement simple)</td><td>Edge AI + lidar</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FONCTIONNEMENT GÉNÉRAL ============ -->
+  <section class="proj-section" data-spec-section="fonctionnement">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <div class="reading-level"><span class="dot"></span><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span> Niveau de lecture — intermédiaire</div>
+      <p class="eyebrow">Fonctionnement général</p>
+      <h2>Le système HELIX&nbsp;: une hélice pour deux fluides</h2>
+      <p>L'air a une densité moyenne d'environ 1,2&nbsp;kg/m³, l'eau environ 1000&nbsp;kg/m³ — un rapport proche de 1 pour 814. Une hélice optimisée pour l'air tournerait en surrégime destructeur sous l'eau&nbsp;; une hélice hydrodynamique produirait une poussée dérisoire dans l'air. VOLTIGE résout cette contradiction avec HELIX, un système de propulsion coaxial à double hélice partageant le même axe de rotation.</p>
+      <p>La sélection de l'hélice active est assurée par un mécanisme d'embrayage à très faible consommation&nbsp;: il ne sollicite l'alimentation électrique que pendant le changement d'état, entre deux hélices, et conserve sa position sans consommation continue une fois engagé.</p>
+      <p>Lors d'une transition, le contrôleur de vol réduit temporairement le régime moteur pour limiter les contraintes mécaniques sur l'embrayage. Une fois la transition effectuée, l'hélice adaptée au nouveau milieu est engagée et le régime nominal rétabli.</p>
+    </div>
+  </section>
+
+  <!-- ============ ARCHITECTURE ============ -->
+  <section class="proj-section" data-spec-section="architecture">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Architecture</p>
+        <h2>Trois calculateurs, trois boucles isolées</h2>
+        <p class="lead">La stabilité du vecteur ne doit jamais dépendre de la fiabilité de son intelligence artificielle. VOLTIGE sépare strictement les responsabilités critiques et non-critiques entre trois cartes de calcul spécialisées.</p>
+      </div>
+      <div class="arch-list" data-reveal>
+        <div class="arch-item">
+          <h3>Contrôle temps réel<span class="mono">Boucle critique</span></h3>
+          <p>Boucle critique à haute fréquence. Traite les capteurs inertiels et de pression, commande directement les moteurs. Maintient l'appareil en sécurité — vol stationnaire ou flottaison passive — même en cas de défaillance complète des autres calculateurs.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Intelligence embarquée<span class="mono">Boucle décisionnelle</span></h3>
+          <p>Boucle décisionnelle dédiée au traitement IA embarqué. Exécute les réseaux de détection d'objets, la cartographie locale et l'analyse sémantique de l'environnement. Ne pilote jamais directement les moteurs&nbsp;: elle suggère des corrections de cap au contrôleur de vol.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Communication<span class="mono">Boucle asynchrone</span></h3>
+          <p>Boucle asynchrone basse fréquence. Orchestre la télémétrie et le flux vidéo vers la station au sol via le meilleur canal disponible, et isole les perturbations réseau du reste du système critique.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--space-8);">Modes opérationnels</h3>
+      <div class="mode-grid" data-reveal>
+        <div class="mode-card"><h4>Vol aérien</h4><p>Évolution standard dans l'atmosphère. IMU, GPS, LiDAR et caméra optique actifs. Consommation optimisée pour la vitesse aérodynamique.</p></div>
+        <div class="mode-card"><h4>Transition air → eau</h4><p>Amerrissage contrôlé. Réduction progressive de la sustentation, pré-activation HELIX, bascule des gains PID pour atténuer l'impact.</p></div>
+        <div class="mode-card"><h4>Navigation sous-marine</h4><p>HELIX en poussée vectorielle, sonar et caméra basse luminosité actifs. Prise en compte de l'inertie fluide élevée du milieu aquatique.</p></div>
+        <div class="mode-card"><h4>Mode secours (fail-safe)</h4><p>Déclenché en cas de perte de liaison ou d'avarie critique. Capteurs redondants minimaux, flottaison positive ou atterrissage forcé selon le milieu.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRUCTURE & ÉTANCHÉITÉ ============ -->
+  <section class="proj-section">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <p class="eyebrow">Structure &amp; étanchéité</p>
+      <h2>Une membrane qui laisse passer l'air, jamais l'eau</h2>
+      <p>Certains capteurs — pression, qualité de l'air, température — doivent conserver un accès direct à l'environnement extérieur, ce qu'un perçage classique rendrait incompatible avec l'immersion. La solution retenue est une membrane de ventilation microporeuse qui égalise la pression interne sans jamais laisser entrer de liquide, une technologie éprouvée dans l'électronique embarquée étanche.</p>
+      <p>La structure utilise une approche composite optimisée pour résister aux contraintes de l'immersion tout en conservant une masse réduite, avec une marge de sécurité confortable au-delà de la profondeur d'usage nominale. Le dimensionnement détaillé — matériaux, épaisseurs, calcul de contraintes — relève des dossiers de conception internes du projet.</p>
+    </div>
+  </section>
+
+  <!-- ============ DONNÉES TECHNIQUES ============ -->
+  <section class="proj-section" data-spec-section="donnees">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Données techniques</p>
+        <h2>Dimensionnement et énergie</h2>
+      </div>
+
+      <div class="data-table-wrap" data-reveal>
+        <table class="data-table">
+          <thead><tr><th>Paramètre</th><th>Valeur</th></tr></thead>
+          <tbody>
+            <tr><td>Envergure</td><td>≈60 cm</td></tr>
+            <tr><td>Type d'aile</td><td>Delta gothique</td></tr>
+            <tr><td>Énergie embarquée</td><td>≈430 Wh</td></tr>
+            <tr><td>Charge utile disponible</td><td>200 g à 3 kg selon configuration de mission</td></tr>
+            <tr><td>Tolérance choc à l'amerrissage</td><td>Structure et électronique dimensionnées pour absorber l'impact</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="lead" data-reveal style="margin-top:var(--space-7);">L'autonomie de 4h30 est fortement influencée par la consommation de l'électronique embarquée&nbsp;: sa réduction reste l'un des principaux leviers d'optimisation identifiés pour les itérations suivantes.</p>
+
+      <h3 style="margin-top:var(--space-8);">Ordre de grandeur du prototype</h3>
+      <div class="data-table-wrap" data-reveal style="margin-top:var(--space-5);">
+        <table class="data-table">
+          <thead><tr><th>Indicateur</th><th>Estimation</th></tr></thead>
+          <tbody>
+            <tr><td>Masse totale du prototype</td><td>≈2,9 kg</td></tr>
+            <tr><td>Coût de fabrication estimé</td><td>≈3 000 €</td></tr>
+            <tr><td>Poste dominant</td><td>Système énergétique (majorité de la masse et du coût)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--text-secondary);font-size:var(--fs-small);margin-top:var(--space-5);" data-reveal>La ventilation détaillée par composant et les références exactes de fournisseurs relèvent du dossier de conception interne.</p>
+    </div>
+    
+  </section>
+
+  <!-- ============ LIMITES & DÉFIS ============ -->
+  <section class="proj-section limits-section" data-spec-section="limites">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Limites &amp; défis</p>
+        <h2>Ce que le projet ne résout pas encore</h2>
+        <p class="lead">La transparence sur les zones de risque fait partie de la méthode <span data-brand>BORAL</span>. Un démonstrateur technologique avancé n'est pas un produit fini.</p>
+      </div>
+      <div class="limits-grid" data-reveal>
+        <div class="callout">
+          <div class="callout-title">Défi structurel principal</div>
+          <p>La transition air-eau reste la phase la plus instable du système&nbsp;: l'eau étant environ 800&nbsp;fois plus dense que l'air, elle impose des forces mécaniques élevées sur les hélices et une gestion dynamique complexe des moteurs lors de l'impact.</p>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Limites identifiées</div>
+          <ul>
+            <li>Consommation énergétique élevée en phase de transition</li>
+            <li>Complexité mécanique du système HELIX (risque de jeu, de frottement parasite)</li>
+            <li>Forte dépendance à la qualité des capteurs IMU et de pression</li>
+            <li>Comportement du fuselage en immersion non encore testé physiquement</li>
+            <li>Étanchéité validée en analyse, pas encore en conditions réelles prolongées</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="risk-table-wrap" data-reveal>
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Risque</th><th>Description</th><th>Gravité</th><th>Niveau global</th></tr></thead>
+            <tbody>
+              <tr><td>Rupture structurelle</td><td>Choc mécanique à l'impact avec l'eau</td><td>Élevée</td><td><span class="risk-level risk-eleve">Élevé</span></td></tr>
+              <tr><td>Fuite d'étanchéité</td><td>Entrée d'eau au niveau de l'électronique</td><td>Très élevée</td><td><span class="risk-level risk-eleve">Élevé</span></td></tr>
+              <tr><td>Erreur capteur IMU</td><td>Mauvaise stabilisation en transition</td><td>Élevée</td><td><span class="risk-level risk-eleve">Élevé</span></td></tr>
+              <tr><td>Surchauffe moteur</td><td>Sollicitation lors de la transition eau/air</td><td>Moyenne</td><td><span class="risk-level risk-moyen">Moyen</span></td></tr>
+              <tr><td>Perte de communication</td><td>Coupure réseau en immersion</td><td>Moyenne</td><td><span class="risk-level risk-moyen">Moyen</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--space-7);" data-reveal>
+        <p class="eyebrow" style="margin-bottom:var(--space-4);">Maturité par sous-système</p>
+        <div class="trl-gauge">
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Contrôle de vol (PX4)</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:94%"></div></div><span class="trl-gauge-value">Très élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">IA embarquée</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:82%"></div></div><span class="trl-gauge-value">Élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Propulsion aérienne</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:92%"></div></div><span class="trl-gauge-value">Très élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Propulsion aquatique</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:52%"></div></div><span class="trl-gauge-value">Moyen</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Transition air/eau</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:30%"></div></div><span class="trl-gauge-value">Expérimental</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAS D'USAGE ============ -->
+  <section class="proj-section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Cas d'usage prioritaires</p>
+        <h2>Trois scénarios d'intervention</h2>
+        <p class="lead">VOLTIGE n'est pas conçu pour remplacer les moyens de secours classiques, mais pour les assister — fluidifier la recherche, réduire le délai avant l'intervention humaine.</p>
+      </div>
+      <div class="usecase-list">
+        <article class="usecase-item" data-reveal>
+          <h3>Sauvetage maritime</h3>
+          <p>Balayage aérien à 75&nbsp;km/h en mode suivi de terrain, puis transition et plongée jusqu'à 20&nbsp;m pour inspecter une épave ou des débris flottants avant l'arrivée des plongeurs. Images transmises en temps réel via 4G/5G.</p>
+          <h4>Impact estimé</h4>
+          <div class="usecase-impact-grid">
+            <div class="usecase-impact"><span class="usecase-impact-value">50–100 €</span><span class="usecase-impact-label">Coût par mission (vs 3 000 € / h hélicoptère)</span></div>
+            <div class="usecase-impact"><span class="usecase-impact-value">×2–3</span><span class="usecase-impact-label">Réduction du temps de réponse</span></div>
+            <div class="usecase-impact"><span class="usecase-impact-value">SNSM</span><span class="usecase-impact-label">Utilisateur cible principal</span></div>
+          </div>
+        </article>
+        <article class="usecase-item" data-reveal>
+          <h3>Sauvetage en montagne</h3>
+          <p>Couverture de 5 à 10&nbsp;km² en 20&nbsp;minutes, avec détection automatique d'anomalies visuelles dans la neige — traces interrompues, équipements abandonnés, couleurs contrastées — puis transmission de coordonnées GPS avec une précision de ±0,5&nbsp;m aux équipes au sol.</p>
+          <h4>Impact estimé</h4>
+          <div class="usecase-impact-grid">
+            <div class="usecase-impact"><span class="usecase-impact-value">50–70 %</span><span class="usecase-impact-label">Réduction du temps de réponse</span></div>
+            <div class="usecase-impact"><span class="usecase-impact-value">5–10 km²</span><span class="usecase-impact-label">Zone couverte en 20 min</span></div>
+            <div class="usecase-impact"><span class="usecase-impact-value">PGHM</span><span class="usecase-impact-label">Utilisateur cible principal</span></div>
+          </div>
+        </article>
+        <article class="usecase-item" data-reveal>
+          <h3>Zones inondées &amp; infrastructures immergées</h3>
+          <p>Cartographie 3D post-catastrophe, détection d'obstacles submergés, puis inspection directe de piliers de ponts, digues ou coques de navires pour repérer fissures, érosion ou fuites — sans exposer de plongeur humain.</p>
+          <h4>Impact estimé</h4>
+          <div class="usecase-impact-grid">
+            <div class="usecase-impact"><span class="usecase-impact-value">96 %</span><span class="usecase-impact-label">Réduction du coût vs plongeurs professionnels</span></div>
+            <div class="usecase-impact"><span class="usecase-impact-value">10–30 km²</span><span class="usecase-impact-label">Couverture par mission</span></div>
+            <div class="usecase-impact"><span class="usecase-impact-value">VNF, EDF</span><span class="usecase-impact-label">Utilisateurs cibles</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="proj-section" data-spec-section="timeline">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Feuille de route</p>
+        <h2>Prochaines étapes</h2>
+      </div>
+      <div class="timeline" data-reveal>
+        <div class="timeline-item">
+          <span class="timeline-date mono">Actuel</span>
+          <span class="timeline-marker"></span>
+          <div class="timeline-content"><h4>Conception avancée &amp; validation d'architecture</h4><p>Définition détaillée des sous-systèmes mécaniques, énergétiques et logiciels. Chiffrage complet du premier prototype.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date mono">Phase suivante</span>
+          <span class="timeline-marker"></span>
+          <div class="timeline-content"><h4>Fabrication du premier prototype</h4><p>Impression 3D des éléments structurels, usinage des pièces à haute contrainte du système de propulsion coaxial.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date mono">Validation</span>
+          <span class="timeline-marker"></span>
+          <div class="timeline-content"><h4>Essais en conditions contrôlées</h4><p>Tests de transition air-eau, validation de l'étanchéité en immersion prolongée, essais de vol réel.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONCLUSION ============ -->
+  <section class="proj-section proj-conclusion">
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow" data-reveal>Synthèse</p>
+      <h2 data-reveal>Un démonstrateur cohérent, des validations restantes</h2>
+      <div data-reveal>
+        <p>L'architecture globale de VOLTIGE repose sur une séparation claire des rôles entre calculateurs embarqués&nbsp;: le contrôleur de vol garantit la sécurité même en cas de défaillance des autres modules, le calculateur IA prend en charge la navigation autonome, et le module de communication assure la liaison avec la station au sol. Cette approche est directement inspirée des pratiques de l'aéronautique et de la robotique professionnelle, où la spécialisation des calculateurs prime sur la centralisation.</p>
+        <p>Environ 80&nbsp;% du système repose sur des technologies déjà éprouvées dans l'industrie du drone, ce qui réduit sensiblement le risque global du projet. La complexité de la transition air-eau, les contraintes d'étanchéité et une structure encore non testée en conditions aquatiques réelles constituent les principaux défis à lever avant toute application opérationnelle. VOLTIGE reste, à ce stade, un démonstrateur technologique avancé&nbsp;: cohérent sur le plan théorique, avec un potentiel d'évolution significatif vers une nouvelle génération de vecteurs multi-milieux.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="proj-nav">
+  <div class="wrap">
+    <a href="aquacool.html" class="proj-nav-link"><span class="mono">← Précédent</span><span>AquaCool Personal</span></a>
+    <a href="astral.html" class="proj-nav-link next"><span class="mono">Suivant →</span><span>ASTRAL</span></a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <div class="footer-mark">
+        <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+        <span><span data-brand>BORAL</span> © <span data-year></span></span>
+      </div>
+      <p class="footer-tagline">Simulating the future. Building it today.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation de pied de page">
+      <a href="entreprise.html">Entreprise</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="scroll-reveal.js"></script>
+<script src="specs-rail.js"></script>
+</body>
+</html>

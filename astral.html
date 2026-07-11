@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-motion="normal" data-fx="on">
+<head>
+<script src="brand.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASTRAL — Aile volante haute endurance — __BRAND__</title>
+<meta name="description" content="ASTRAL est une aile volante 100% électrique de classe MALE, avec aspiration active de la couche limite. Plus de 6h d'autonomie et 963 km franchissables.">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="projet-detail.css">
+</head>
+<body>
+
+<div class="thermal-halo" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+      <span data-brand>BORAL</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn settings-trigger" aria-expanded="false" aria-controls="settings-panel" aria-label="Réglages d'affichage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-panel-title">Affichage</div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Mode clair</div></div>
+      <button class="switch" data-switch="theme" role="switch" aria-checked="false" aria-label="Activer le mode clair"></button>
+    </div>
+    <div class="settings-row">
+      <div><div class="settings-row-label">Réduire les animations</div></div>
+      <button class="switch" data-switch="motion" role="switch" aria-checked="false" aria-label="Réduire les animations"></button>
+    </div>
+    <div class="settings-row">
+      <div>
+        <div class="settings-row-label">Éléments 3D / effets</div>
+        <div class="settings-row-desc">Désactive l'objet interactif et le halo</div>
+      </div>
+      <button class="switch" data-switch="fx" role="switch" aria-checked="true" aria-label="Activer les effets"></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigation mobile">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="entreprise.html">Entreprise</a></li>
+    <li><a href="technologies.html">Technologies</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <div class="proj-breadcrumb">
+    <div class="wrap">
+      <nav aria-label="Fil d'ariane">
+        <a href="projets.html">Projets</a><span>/</span><span>ASTRAL</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="proj-detail-hero">
+    <div class="wrap project-body">
+      <div>
+        <div class="status-badge status-recherche">Recherche &amp; développement</div>
+        <h1>ASTRAL</h1>
+        <p class="proj-detail-tagline">Voler haut pour dépenser moins.</p>
+        <p class="lead">ASTRAL est un démonstrateur d'aile volante haute altitude, longue endurance, à propulsion 100&nbsp;% électrique. Sans fuselage central ni empennage, l'aile elle-même sert de carrosserie et de réservoir d'énergie. Un contrôle actif de la couche limite et une architecture haute tension permettent d'atteindre des performances qui dépassent les références actuelles de sa catégorie en propulsion entièrement électrique.</p>
+
+        <div class="proj-hero-stats">
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">11,1 kg</span><span class="proj-hero-stat-label">Masse totale</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">6h25</span><span class="proj-hero-stat-label">Autonomie maximale</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">963 km</span><span class="proj-hero-stat-label">Distance franchissable</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">3–5 km</span><span class="proj-hero-stat-label">Altitude de croisière</span></div>
+        </div>
+      </div>
+      <aside class="specs-rail">
+        <div class="specs-rail-block" data-spec-for="vision"><span class="specs-rail-label">Catégorie</span><span class="specs-rail-value" style="font-size:1rem;">MALE</span></div>
+        <div class="specs-rail-block" data-spec-for="fonctionnement"><span class="specs-rail-label">Envergure</span><span class="specs-rail-value">1,60–2,30 <small>m</small></span></div>
+        <div class="specs-rail-block" data-spec-for="architecture"><span class="specs-rail-label">Propulsion</span><span class="specs-rail-value" style="font-size:1rem;">EDF caréné</span></div>
+        <div class="specs-rail-block" data-spec-for="donnees"><span class="specs-rail-label">Énergie embarquée</span><span class="specs-rail-value">1 764 <small>Wh</small></span></div>
+        <div class="specs-rail-block" data-spec-for="limites"><span class="specs-rail-label">Réduction traînée couche limite</span><span class="specs-rail-value">÷2</span></div>
+        <div class="specs-rail-block" data-spec-for="timeline"><span class="specs-rail-label">Stade</span><span class="specs-rail-value" style="font-size:1rem;">Dimensionnement complet</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ VISION (vulgarisé) ============ -->
+  <section class="proj-section" data-spec-section="vision">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <div class="reading-level"><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span> Niveau de lecture — accessible</div>
+      <p class="eyebrow">Vision</p>
+      <h2>Une aile qui triche avec sa propre traînée</h2>
+      <p>L'architecture externe d'ASTRAL fusionne deux références de l'aviation militaire&nbsp;: l'allongement d'une aile volante type B-2 Spirit et le style d'entrée d'air d'un chasseur F-35. Sans fuselage séparé, sans queue ni dérives verticales, c'est l'aile elle-même qui sert de carrosserie et de réservoir pour les batteries — la configuration qui offre la meilleure finesse aérodynamique possible, c'est-à-dire le meilleur rapport entre portance et traînée.</p>
+      <p>Contrairement au B-2 original, ASTRAL supprime les découpes en dents de scie destinées à la furtivité radar, pour conserver un bord de fuite propre&nbsp;: moins de vortex parasites, une meilleure glisse. Sa mission se situe dans la catégorie MALE — Medium Altitude Long Endurance — entre 3&nbsp;000 et 5&nbsp;000&nbsp;mètres d'altitude, où l'air raréfié réduit fortement la traînée de friction externe et permet d'économiser une quantité massive d'énergie.</p>
+    </div>
+  </section>
+
+  <!-- ============ FONCTIONNEMENT — PROPULSION ============ -->
+  <section class="proj-section" data-spec-section="fonctionnement">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <div class="reading-level"><span class="dot"></span><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span> Niveau de lecture — intermédiaire</div>
+      <p class="eyebrow">Fonctionnement général</p>
+      <h2>Un cycle inspiré des compresseurs de turboréacteur</h2>
+      <p>Le cœur d'ASTRAL est un bloc EDF (Electric Ducted Fan) caréné, intégré dans le dos de l'aile, dont l'architecture reprend la configuration Rotor–Stator–Rotor des compresseurs de turboréacteurs. L'entrée d'air, positionnée à l'avant selon une géométrie inspirée du F-35, utilise l'effet de bélier&nbsp;: à haute vitesse, l'air y ralentit légèrement et se convertit en pression statique — il arrive déjà pré-comprimé sur le premier rotor.</p>
+      <p>Ce premier rotor accélère le flux en lui donnant un mouvement de rotation. Le stator, une couronne d'aubes fixes, redresse ensuite ce flux tourbillonnant et transforme l'énergie rotative perdue en surpression. Un second rotor, tournant dans le même sens que le premier pour simplifier la mécanique, redonne au flux hyper-dense une accélération finale maximale avant son éjection par une tuyère convergente.</p>
+    </div>
+  </section>
+
+  <!-- ============ ARCHITECTURE — COUCHE LIMITE + ÉNERGIE ============ -->
+  <section class="proj-section" data-spec-section="architecture">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Architecture</p>
+        <h2>Aspiration active de la couche limite</h2>
+        <p class="lead">À 250&nbsp;km/h, le plus grand ennemi d'une aile volante est l'air qui colle à sa peau jusqu'à tourbillonner, générant une traînée de friction considérable. ASTRAL neutralise ce phénomène par aspiration active plutôt que par un profil passif.</p>
+      </div>
+      <div class="arch-list" data-reveal>
+        <div class="arch-item">
+          <h3>Peau poreuse<span class="mono">Moitié supérieure de l'aile</span></h3>
+          <p>Des milliers de micro-perforations microscopiques recouvrent la surface supérieure de l'aile, permettant à l'air turbulent d'être aspiré avant qu'il ne freine le vecteur.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Collecteur interne<span class="mono">Double paroi creuse</span></h3>
+          <p>Sous la peau poreuse, une double paroi relie directement la zone d'aspiration à l'EDF principal — l'air capté participe ensuite activement à la poussée plutôt que d'être simplement évacué.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Résultat mesuré<span class="mono">Traînée de friction</span></h3>
+          <p>La traînée de friction de l'aile est divisée par deux par rapport à une aile équivalente sans aspiration active — l'un des principaux leviers expliquant l'autonomie visée par le projet.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--space-8);">Architecture énergétique 14S</h3>
+      <p class="lead" style="margin-top:var(--space-4);max-width:68ch;">Pour alimenter le système sans transformer le drone en radiateur, ASTRAL abandonne les basses tensions classiques (12V, 24V) pour une architecture 14S haute tension de sécurité, délivrant une tension nominale de 50,4&nbsp;V. En montant à cette tension, le courant nécessaire s'effondre à seulement 39&nbsp;A en croisière — assez pour alléger significativement le câblage, supprimer les radiateurs des contrôleurs et éliminer une grande partie du gaspillage par effet Joule.</p>
+    </div>
+  </section>
+
+  <!-- ============ DONNÉES TECHNIQUES — PERFORMANCES ============ -->
+  <section class="proj-section" data-spec-section="donnees">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Données techniques</p>
+        <h2>Trois profils de mission</h2>
+        <p class="lead">La vitesse de croisière détermine directement le profil opérationnel — d'un intercepteur rapide à un planeur stratégique de l'extrême.</p>
+      </div>
+      <div class="data-table-wrap" data-reveal>
+        <table class="data-table">
+          <thead><tr><th>Mode</th><th>Vitesse</th><th>Autonomie</th><th>Distance franchissable</th></tr></thead>
+          <tbody>
+            <tr><td>Sprint</td><td>250 km/h</td><td>1h45</td><td>438 km</td></tr>
+            <tr><td>Équilibre</td><td>200 km/h</td><td>3h08</td><td>627 km</td></tr>
+            <tr><td>Endurance absolue</td><td>150 km/h</td><td>6h25</td><td>963 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="data-table-wrap" data-reveal style="margin-top:var(--space-7);">
+        <table class="data-table">
+          <thead><tr><th>Paramètre</th><th>Valeur</th></tr></thead>
+          <tbody>
+            <tr><td>Configuration batterie</td><td>14S — 50,4 V nominal / 58,8 V charge pleine</td></tr>
+            <tr><td>Capacité</td><td>35 Ah — 1 764 Wh embarqués</td></tr>
+            <tr><td>Masse batterie</td><td>≈7 kg</td></tr>
+            <tr><td>Courant en croisière</td><td>≈39 A</td></tr>
+            <tr><td>Électronique de bord</td><td>≈40 W constants (navigation, servos)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIMITES & DÉFIS ============ -->
+  <section class="proj-section limits-section" data-spec-section="limites">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Limites &amp; défis</p>
+        <h2>Ce que le dimensionnement ne garantit pas encore</h2>
+        <p class="lead">Un calcul de performance théorique n'équivaut pas à une validation en vol. Plusieurs hypothèses du dimensionnement actuel restent à confirmer.</p>
+      </div>
+      <div class="limits-grid" data-reveal>
+        <div class="callout">
+          <div class="callout-title">Hypothèses à valider</div>
+          <ul>
+            <li>Le profil MH-32 est optimisé pour les planeurs, non spécifiquement pour une aile delta — une alternative NACA série 64 reste à arbitrer</li>
+            <li>Les performances d'aspiration active de la couche limite sont issues de calculs, pas encore de soufflerie</li>
+            <li>La tenue thermique de l'EDF en régime sprint prolongé n'est pas encore caractérisée expérimentalement</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Contraintes opérationnelles</div>
+          <p>La catégorie MALE impose une autorisation de vol en espace aérien contrôlé au-delà de certaines altitudes. L'architecture 14S, si elle réduit les pertes électriques, complexifie la maintenance et exige une expertise spécifique en sécurité électrique haute tension pour les opérateurs au sol.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:var(--space-7);" data-reveal>
+        <p class="eyebrow" style="margin-bottom:var(--space-4);">Maturité par sous-système</p>
+        <div class="trl-gauge">
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Propulsion EDF</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:78%"></div></div><span class="trl-gauge-value">Élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Architecture 14S</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:70%"></div></div><span class="trl-gauge-value">Élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Flip-flaps actifs</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:48%"></div></div><span class="trl-gauge-value">Moyen</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Aspiration couche limite</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:28%"></div></div><span class="trl-gauge-value">Expérimental</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="proj-section" data-spec-section="timeline">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Feuille de route</p>
+        <h2>Prochaines étapes</h2>
+      </div>
+      <div class="timeline" data-reveal>
+        <div class="timeline-item">
+          <span class="timeline-date mono">Actuel</span>
+          <span class="timeline-marker"></span>
+          <div class="timeline-content"><h4>Dimensionnement complet</h4><p>Calculs aérodynamiques, énergétiques et structurels finalisés pour les trois profils de mission.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date mono">Phase suivante</span>
+          <span class="timeline-marker"></span>
+          <div class="timeline-content"><h4>Essais en soufflerie</h4><p>Validation expérimentale du gain de traînée apporté par l'aspiration active de la couche limite.</p></div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date mono">Validation</span>
+          <span class="timeline-marker"></span>
+          <div class="timeline-content"><h4>Prototype et essais en vol</h4><p>Fabrication d'une cellule à échelle réduite, qualification de l'architecture 14S en conditions réelles.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONCLUSION ============ -->
+  <section class="proj-section proj-conclusion">
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow" data-reveal>Synthèse</p>
+      <h2 data-reveal>Chaque choix géométrique au service d'un seul objectif&nbsp;: l'autonomie</h2>
+      <div data-reveal>
+        <p>ASTRAL démontre qu'une propulsion 100&nbsp;% électrique peut atteindre des performances d'endurance longtemps réservées aux motorisations thermiques, à condition de traiter l'aérodynamique, l'énergie et la structure comme un seul et même problème d'optimisation plutôt que comme trois disciplines séparées. L'aspiration active de la couche limite et l'architecture 14S ne sont pas des options — ce sont les deux leviers qui rendent le mode endurance absolue physiquement atteignable.</p>
+        <p>Le projet reste au stade du dimensionnement théorique complet&nbsp;: la prochaine étape critique est la confrontation de ces calculs à des données de soufflerie et de vol réel, en particulier sur le gain effectif de l'aspiration de couche limite, qui conditionne une part significative des performances annoncées.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="proj-nav">
+  <div class="wrap">
+    <a href="voltige.html" class="proj-nav-link"><span class="mono">← Précédent</span><span>VOLTIGE</span></a>
+    <a href="swarm.html" class="proj-nav-link next"><span class="mono">Suivant →</span><span>SWARM</span></a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <div class="footer-mark">
+        <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg>
+        <span><span data-brand>BORAL</span> © <span data-year></span></span>
+      </div>
+      <p class="footer-tagline">Simulating the future. Building it today.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation de pied de page">
+      <a href="entreprise.html">Entreprise</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="scroll-reveal.js"></script>
+<script src="specs-rail.js"></script>
+</body>
+</html>

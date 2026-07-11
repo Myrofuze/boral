@@ -1,0 +1,104 @@
+/* ==========================================================================
+   projet-detail.css
+   Structure partagée par toutes les pages projet (VOLTIGE, ASTRAL, SWARM,
+   SUNDIAL, AquaCool, Albatros). Progression vulgarisé → technique.
+   ========================================================================== */
+
+/* --- Fil d'ariane --- */
+.proj-breadcrumb {
+  padding-top: calc(var(--space-10) + var(--space-3));
+  padding-bottom: var(--space-4);
+}
+.proj-breadcrumb nav { display: flex; align-items: center; gap: var(--space-3); font-family: var(--font-mono); font-size: var(--fs-micro); color: var(--text-tertiary); }
+.proj-breadcrumb a { color: var(--text-tertiary); transition: color var(--dur-fast) var(--ease-out); }
+.proj-breadcrumb a:hover { color: var(--accent); }
+
+/* --- Hero projet --- */
+.proj-detail-hero { padding-top: var(--space-4); padding-bottom: var(--space-8); }
+.proj-detail-hero .status-badge { margin-bottom: var(--space-5); }
+.proj-detail-hero h1 { font-size: var(--fs-1); margin-bottom: var(--space-5); }
+.proj-detail-tagline { font-family: var(--font-display); font-style: italic; font-size: var(--fs-4); color: var(--accent); margin-bottom: var(--space-6); max-width: 34ch; }
+.proj-detail-hero .lead { max-width: 68ch; }
+
+.proj-hero-stats { display: flex; flex-wrap: wrap; gap: var(--space-8); margin-top: var(--space-8); }
+.proj-hero-stat { display: flex; flex-direction: column; gap: var(--space-2); }
+.proj-hero-stat-value { font-family: var(--font-mono); font-size: var(--fs-3); color: var(--accent); }
+.proj-hero-stat-label { font-family: var(--font-mono); font-size: var(--fs-micro); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* --- Corps général --- */
+.proj-section { border-top: 1px solid var(--border-subtle); scroll-margin-top: 100px; }
+.proj-section-intro p { color: var(--text-secondary); margin-top: var(--space-5); }
+.proj-section-intro p + p { margin-top: var(--space-4); }
+
+.proj-section .section-head h2 { margin-top: var(--space-2); }
+
+/* --- Niveau de lecture (vulgarisé -> technique) --- */
+.reading-level {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-5);
+}
+.reading-level .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--border-strong); }
+.reading-level .dot.is-active { background: var(--accent); }
+
+/* --- Bloc architecture / diagrammes texte --- */
+.arch-list { display: flex; flex-direction: column; margin-top: var(--space-6); }
+.arch-item { display: grid; grid-template-columns: 200px 1fr; gap: var(--space-6); padding-block: var(--space-6); border-top: 1px solid var(--border-subtle); }
+.arch-item:last-child { border-bottom: 1px solid var(--border-subtle); }
+.arch-item h3 { font-size: var(--fs-body); font-weight: 600; }
+.arch-item h3 .mono { display: block; font-size: var(--fs-micro); color: var(--accent); font-weight: 400; margin-top: var(--space-1); }
+.arch-item p { color: var(--text-secondary); font-size: var(--fs-small); }
+@media (max-width: 720px) {
+  .arch-item { grid-template-columns: 1fr; gap: var(--space-3); }
+}
+
+/* --- Grille modes / composants --- */
+.mode-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); margin-top: var(--space-6); }
+.mode-card { padding: var(--space-6); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+.mode-card h4 { font-family: var(--font-mono); font-size: var(--fs-small); color: var(--accent); margin-bottom: var(--space-3); }
+.mode-card p { color: var(--text-secondary); font-size: var(--fs-small); }
+@media (max-width: 720px) { .mode-grid { grid-template-columns: 1fr; } }
+
+/* --- Section limites / défis --- */
+.limits-section { background: var(--bg-elevated); }
+.limits-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); margin-top: var(--space-6); }
+@media (max-width: 800px) { .limits-grid { grid-template-columns: 1fr; } }
+
+/* --- Section risques --- */
+.risk-table-wrap { margin-top: var(--space-6); }
+.risk-level { font-family: var(--font-mono); font-size: var(--fs-micro); padding: 2px 8px; border-radius: 10px; }
+.risk-level.risk-eleve { color: #E0937A; background: rgba(224, 147, 122, 0.12); }
+.risk-level.risk-moyen { color: var(--copper-300); background: rgba(184, 137, 90, 0.12); }
+
+/* --- Cas d'usage (VOLTIGE) --- */
+.usecase-list { display: flex; flex-direction: column; gap: var(--space-7); margin-top: var(--space-6); }
+.usecase-item { padding: var(--space-7); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); }
+.usecase-item h3 { margin-bottom: var(--space-4); }
+.usecase-item h4 { font-family: var(--font-mono); font-size: var(--fs-micro); text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-top: var(--space-5); margin-bottom: var(--space-2); }
+.usecase-item p { color: var(--text-secondary); font-size: var(--fs-small); }
+.usecase-impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4); margin-top: var(--space-3); }
+.usecase-impact { display: flex; flex-direction: column; gap: var(--space-1); }
+.usecase-impact-value { font-family: var(--font-mono); color: var(--accent); font-size: var(--fs-4); }
+.usecase-impact-label { font-size: var(--fs-micro); color: var(--text-tertiary); }
+
+/* --- Section conclusion / synthèse --- */
+.proj-conclusion p { color: var(--text-secondary); margin-top: var(--space-5); }
+
+/* --- Navigation entre projets --- */
+.proj-nav { border-top: 1px solid var(--border-subtle); background: var(--bg-elevated); }
+.proj-nav .wrap { display: flex; justify-content: space-between; align-items: center; gap: var(--space-5); flex-wrap: wrap; }
+.proj-nav-link { display: flex; flex-direction: column; gap: var(--space-2); }
+.proj-nav-link.next { text-align: right; align-items: flex-end; }
+.proj-nav-link .mono { font-size: var(--fs-micro); color: var(--text-tertiary); }
+.proj-nav-link span:last-child { font-family: var(--font-display); font-size: var(--fs-4); transition: color var(--dur-fast) var(--ease-out); }
+.proj-nav-link:hover span:last-child { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .proj-hero-stats { gap: var(--space-6); }
+}

@@ -1,0 +1,49 @@
+/* ==========================================================================
+   entreprise.css
+   ========================================================================== */
+
+.ent-hero {
+  padding-top: calc(var(--space-10) + var(--space-5));
+  padding-bottom: var(--space-8);
+}
+.ent-hero h1 { max-width: 15ch; margin-block: var(--space-5) var(--space-5); }
+.ent-hero .lead { max-width: 60ch; }
+
+.narrative { border-top: 1px solid var(--border-subtle); }
+.narrative-alt { background: var(--bg-elevated); }
+.narrative p { color: var(--text-secondary); margin-top: var(--space-5); }
+.narrative h2 { margin-top: var(--space-3); margin-bottom: var(--space-2); }
+
+.domains { border-top: 1px solid var(--border-subtle); }
+.domain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+.domain-card {
+  padding: var(--space-7);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color var(--dur-fast) var(--ease-out);
+}
+.domain-card:hover { border-color: var(--border-strong); }
+.domain-num { color: var(--accent); font-size: var(--fs-small); }
+.domain-card h3 { margin-block: var(--space-4) var(--space-3); }
+.domain-card p { color: var(--text-secondary); font-size: var(--fs-small); }
+@media (max-width: 720px) {
+  .domain-grid { grid-template-columns: 1fr; }
+}
+
+.method-detail { display: flex; flex-direction: column; margin-top: var(--space-6); }
+.method-detail-item { padding-block: var(--space-6); border-top: 1px solid var(--border-subtle); }
+.method-detail-item:last-child { border-bottom: 1px solid var(--border-subtle); }
+.method-detail-item > span { color: var(--accent); font-size: var(--fs-small); }
+.method-detail-item p { color: var(--text-secondary); margin-top: var(--space-3); }
+
+.closing { background: var(--bg-elevated); border-top: 1px solid var(--border-subtle); }
+.closing-box {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+.closing-box .lead { text-align: center; max-width: 52ch; }

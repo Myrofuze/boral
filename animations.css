@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes drift {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.2deg); }
+}
+
+.hero-anim-1 { animation: fadeUp 900ms var(--ease-out) both; }
+.hero-anim-2 { animation: fadeUp 900ms var(--ease-out) 120ms both; }
+.hero-anim-3 { animation: fadeUp 900ms var(--ease-out) 240ms both; }
+.hero-anim-4 { animation: fadeIn 1100ms var(--ease-out) 420ms both; }
+
+html[data-motion="reduced"] .hero-anim-1,
+html[data-motion="reduced"] .hero-anim-2,
+html[data-motion="reduced"] .hero-anim-3,
+html[data-motion="reduced"] .hero-anim-4 {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}

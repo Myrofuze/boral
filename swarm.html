@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark" data-motion="normal" data-fx="on">
+<head>
+<script src="brand.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SWARM — Système multi-drones autonome — __BRAND__</title>
+<meta name="description" content="SWARM est un système de drones en essaim pour la reconnaissance et la cartographie collaborative, coordonné par une architecture de communication pyramidale.">
+<link rel="icon" href="favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="projet-detail.css">
+</head>
+<body>
+
+<div class="thermal-halo" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand"><svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg><span data-brand>BORAL</span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="technologies.html">Technologies</a></li>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="icon-btn settings-trigger" aria-expanded="false" aria-controls="settings-panel" aria-label="Réglages d'affichage">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06A1.65 1.65 0 004.6 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="settings-panel" id="settings-panel">
+    <div class="settings-panel-title">Affichage</div>
+    <div class="settings-row"><div><div class="settings-row-label">Mode clair</div></div><button class="switch" data-switch="theme" role="switch" aria-checked="false" aria-label="Activer le mode clair"></button></div>
+    <div class="settings-row"><div><div class="settings-row-label">Réduire les animations</div></div><button class="switch" data-switch="motion" role="switch" aria-checked="false" aria-label="Réduire les animations"></button></div>
+    <div class="settings-row"><div><div class="settings-row-label">Éléments 3D / effets</div><div class="settings-row-desc">Désactive l'objet interactif et le halo</div></div><button class="switch" data-switch="fx" role="switch" aria-checked="true" aria-label="Activer les effets"></button></div>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Navigation mobile">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="entreprise.html">Entreprise</a></li>
+    <li><a href="technologies.html">Technologies</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+  <div class="proj-breadcrumb">
+    <div class="wrap"><nav aria-label="Fil d'ariane"><a href="projets.html">Projets</a><span>/</span><span>SWARM</span></nav></div>
+  </div>
+
+  <section class="proj-detail-hero">
+    <div class="wrap project-body">
+      <div>
+        <div class="status-badge status-recherche">Conception initiale</div>
+        <h1>SWARM</h1>
+        <p class="proj-detail-tagline">Un réseau, pas une flotte.</p>
+        <p class="lead">SWARM est un système de drones légers travaillant en équipe pour analyser de grandes zones — bâtiments, extérieurs, zones sinistrées — de façon autonome et coordonnée. Chaque unité est compacte, réparable et déployable en quelques secondes depuis un boîtier de transport à éjection par ressort.</p>
+        <div class="proj-hero-stats">
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">10×10 cm</span><span class="proj-hero-stat-label">Corps replié</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">×5</span><span class="proj-hero-stat-label">Drones par chef d'essaim</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">5–7 Ah</span><span class="proj-hero-stat-label">Batterie par unité</span></div>
+          <div class="proj-hero-stat"><span class="proj-hero-stat-value">∞</span><span class="proj-hero-stat-label">Scalabilité réseau</span></div>
+        </div>
+      </div>
+      <aside class="specs-rail">
+        <div class="specs-rail-block" data-spec-for="vision"><span class="specs-rail-label">Missions cibles</span><span class="specs-rail-value" style="font-size:0.95rem;">Secours, inspection</span></div>
+        <div class="specs-rail-block" data-spec-for="fonctionnement"><span class="specs-rail-label">Envergure déployée</span><span class="specs-rail-value" style="font-size:1rem;">20 × 30 cm</span></div>
+        <div class="specs-rail-block" data-spec-for="architecture"><span class="specs-rail-label">Calcul embarqué</span><span class="specs-rail-value" style="font-size:0.95rem;">Edge AI dédié</span></div>
+        <div class="specs-rail-block" data-spec-for="donnees"><span class="specs-rail-label">Matériau structure</span><span class="specs-rail-value" style="font-size:1rem;">Nylon</span></div>
+        <div class="specs-rail-block" data-spec-for="limites"><span class="specs-rail-label">Communication</span><span class="specs-rail-value" style="font-size:1rem;">WiFi + Bluetooth</span></div>
+        <div class="specs-rail-block" data-spec-for="timeline"><span class="specs-rail-label">Stade</span><span class="specs-rail-value" style="font-size:1rem;">Conception initiale</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="proj-section" data-spec-section="vision">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <div class="reading-level"><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span> Niveau de lecture — accessible</div>
+      <p class="eyebrow">Vision</p>
+      <h2>Voir grand en pensant petit</h2>
+      <p>Face à une zone sinistrée ou un bâtiment à sécuriser, un seul drone — même performant — ne peut couvrir qu'une surface limitée par unité de temps. SWARM inverse la logique&nbsp;: plutôt qu'un vecteur unique très capable, une population de petites unités légères, peu coûteuses à produire et à remplacer, qui se répartissent la couverture d'une zone et remontent l'information de façon collective.</p>
+      <p>Trois usages structurent le projet&nbsp;: la vérification et sécurisation de bâtiments pour des opérations spécialisées, la recherche de survivants pour des équipes de secours de type THW (Technisches Hilfswerk allemand), et la reconnaissance de zones dangereuses sans exposition humaine directe.</p>
+    </div>
+  </section>
+
+  <section class="proj-section" data-spec-section="fonctionnement">
+    <div class="wrap wrap-narrow proj-section-intro">
+      <div class="reading-level"><span class="dot"></span><span class="dot is-active"></span><span class="dot"></span><span class="dot"></span> Niveau de lecture — intermédiaire</div>
+      <p class="eyebrow">Fonctionnement général</p>
+      <h2>Déploiement à ressort, ailes auto-déployées</h2>
+      <p>Chaque drone est plié et chargé dans un boîtier de transport. À l'éjection, un mécanisme à ressort ouvre automatiquement les ailes par simple force mécanique&nbsp;: aucun servo n'est nécessaire à ce stade. Le drone s'initialise en vol et rejoint l'essaim de façon autonome, guidé par un pilote automatique open source dérivé d'ArduPilot ou PX4, avec GPS intégré et évitement d'obstacles.</p>
+      <p>La structure en Nylon a été retenue pour sa légèreté et sa résistance aux chocs répétés propres à ce mode de déploiement, ainsi que pour la facilité de réparation en conditions de terrain. Une protection légère contre la pluie (IP légère) complète l'ensemble, sans viser une étanchéité totale — ce n'est pas la mission première de ces unités.</p>
+    </div>
+  </section>
+
+  <section class="proj-section" data-spec-section="architecture">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Architecture</p>
+        <h2>Communication&nbsp;: l'architecture pyramidale</h2>
+        <p class="lead">Le WiFi et le Bluetooth ne permettent la communication simultanée directe qu'entre cinq drones au maximum. Au-delà, le réseau sature. SWARM contourne cette limite par une hiérarchie de coordination plutôt que par un réseau plat.</p>
+      </div>
+      <div class="arch-list" data-reveal>
+        <div class="arch-item">
+          <h3>Drones chefs<span class="mono">Niveau intermédiaire</span></h3>
+          <p>Chaque drone chef coordonne jusqu'à cinq drones subordonnés et communique avec les autres chefs ainsi qu'avec l'opérateur humain — un rôle purement fonctionnel, pas une unité matériellement différente.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Scalabilité verticale<span class="mono">Niveaux illimités</span></h3>
+          <p>Augmenter le nombre de drones ajoute des niveaux hiérarchiques plutôt que de saturer un réseau plat&nbsp;: la structure reste stable quelle que soit la taille de l'essaim déployé.</p>
+        </div>
+        <div class="arch-item">
+          <h3>Détection embarquée<span class="mono">Vision par IA locale</span></h3>
+          <p>Chaque unité fait tourner un algorithme de détection d'objets en local grâce à un accélérateur IA dédié optimisé pour l'énergie, permettant la reconnaissance sans dépendre d'une liaison continue vers un calculateur central.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:var(--space-8);">Capteurs et pilotage</h3>
+      <div class="mode-grid" data-reveal>
+        <div class="mode-card"><h4>Caméra inférieure</h4><p>Flux vidéo temps réel transmis vers l'équipe au sol pour supervision directe de la zone survolée.</p></div>
+        <div class="mode-card"><h4>Caméra frontale</h4><p>Dédiée à la navigation autonome et à la détection d'obstacles en vol.</p></div>
+        <div class="mode-card"><h4>Recharge passive</h4><p>Panneau solaire intégré sur le dessus du drone, complété par une recharge par induction sans fil au sol.</p></div>
+        <div class="mode-card"><h4>Pilote automatique</h4><p>Solution open source (ArduPilot / PX4) avec GPS et évitement d'obstacles automatique.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section" data-spec-section="donnees">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Données techniques</p>
+        <h2>Fiche technique</h2>
+      </div>
+      <div class="data-table-wrap" data-reveal>
+        <table class="data-table">
+          <thead><tr><th>Fonction</th><th>Approche retenue</th></tr></thead>
+          <tbody>
+            <tr><td>Calcul embarqué</td><td>Module de calcul compact grand public</td></tr>
+            <tr><td>Accélérateur IA</td><td>Accélérateur dédié bas coût, basse consommation</td></tr>
+            <tr><td>Détection d'objets</td><td>Réseau de vision temps réel</td></tr>
+            <tr><td>Pilote automatique</td><td>Solution open source éprouvée</td></tr>
+            <tr><td>Communication</td><td>WiFi + Bluetooth, architecture pyramidale</td></tr>
+            <tr><td>Caméras</td><td>2× (inférieure + frontale)</td></tr>
+            <tr><td>Autonomie batterie</td><td>Plusieurs heures, recharge solaire d'appoint</td></tr>
+            <tr><td>Matériau structure</td><td>Nylon</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section limits-section" data-spec-section="limites">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Limites &amp; défis</p>
+        <h2>Problèmes identifiés, pistes en cours</h2>
+        <p class="lead">Le projet est encore en phase de conception&nbsp;: les idées principales sont définies, les défis techniques identifiés, plusieurs solutions restent à trancher.</p>
+      </div>
+      <div class="data-table-wrap" data-reveal>
+        <table class="data-table">
+          <thead><tr><th>Problème</th><th>Statut</th><th>Piste de solution</th></tr></thead>
+          <tbody>
+            <tr><td>Communication au-delà de 5 drones</td><td><span class="status-badge status-actif" style="padding:2px 8px;">Résolu</span></td><td>Architecture pyramidale</td></tr>
+            <tr><td>Fermeture des ailes à l'atterrissage</td><td><span class="status-badge status-recherche" style="padding:2px 8px;">En cours</span></td><td>Servo de rappel ou mécanisme à came</td></tr>
+            <tr><td>Résistance aux vents forts</td><td><span class="status-badge status-recherche" style="padding:2px 8px;">En cours</span></td><td>Lest bas + algorithme de stabilisation</td></tr>
+            <tr><td>Consommation énergétique</td><td><span class="status-badge status-recherche" style="padding:2px 8px;">En cours</span></td><td>Batterie 5–7 Ah + recharge solaire</td></tr>
+            <tr><td>Jam du système d'ailes</td><td><span class="status-badge status-recherche" style="padding:2px 8px;">En cours</span></td><td>Guide-rails + matériau anti-friction</td></tr>
+            <tr><td>Transmission de données vers les opérateurs</td><td><span class="status-badge status-recherche" style="padding:2px 8px;">En cours</span></td><td>Mesh WiFi + tablette centrale</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout" data-reveal style="margin-top:var(--space-6);">
+        <div class="callout-title">Point d'attention structurel</div>
+        <p>Le mécanisme de déploiement à ressort résout élégamment l'ouverture des ailes, mais complique leur fermeture pour un atterrissage automatique — un problème mécanique inverse qui n'a pas encore de solution arbitrée à ce stade du projet.</p>
+      </div>
+
+      <div style="margin-top:var(--space-7);" data-reveal>
+        <p class="eyebrow" style="margin-bottom:var(--space-4);">Maturité par sous-système</p>
+        <div class="trl-gauge">
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Détection embarquée par IA</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:80%"></div></div><span class="trl-gauge-value">Élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Pilote automatique open source</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:85%"></div></div><span class="trl-gauge-value">Élevé</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Architecture pyramidale</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:38%"></div></div><span class="trl-gauge-value">Moyen-faible</span></div>
+          <div class="trl-gauge-row"><span class="trl-gauge-label">Mécanisme d'ailes à ressort</span><div class="trl-gauge-track"><div class="trl-gauge-fill" style="--fill:22%"></div></div><span class="trl-gauge-value">Expérimental</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section" data-spec-section="timeline">
+    <div class="wrap">
+      <div class="section-head" data-reveal><p class="eyebrow">Feuille de route</p><h2>Prochaines étapes</h2></div>
+      <div class="timeline" data-reveal>
+        <div class="timeline-item"><span class="timeline-date mono">Actuel</span><span class="timeline-marker"></span><div class="timeline-content"><h4>Conception initiale</h4><p>Architecture pyramidale de communication validée sur le plan théorique, choix des composants stabilisé.</p></div></div>
+        <div class="timeline-item"><span class="timeline-date mono">Phase suivante</span><span class="timeline-marker"></span><div class="timeline-content"><h4>Résolution du mécanisme d'ailes</h4><p>Arbitrage entre servo de rappel et mécanisme à came pour la fermeture au posé.</p></div></div>
+        <div class="timeline-item"><span class="timeline-date mono">Validation</span><span class="timeline-marker"></span><div class="timeline-content"><h4>Premier prototype fonctionnel</h4><p>Test d'éjection, de déploiement et de coordination à trois drones minimum.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proj-section proj-conclusion">
+    <div class="wrap wrap-narrow">
+      <p class="eyebrow" data-reveal>Synthèse</p>
+      <h2 data-reveal>Un problème de réseau avant d'être un problème de drone</h2>
+      <div data-reveal>
+        <p>La contribution technique la plus solide de SWARM à ce stade n'est pas mécanique mais architecturale&nbsp;: l'architecture de communication pyramidale résout un verrou réel — la limite à cinq unités du WiFi/Bluetooth classique — par une hiérarchie logicielle plutôt que par un changement de protocole radio, ce qui la rend compatible avec du matériel grand public à faible coût.</p>
+        <p>Le projet reste en phase de conception initiale&nbsp;: plusieurs défis mécaniques, notamment la fermeture des ailes au posé et la résistance aux vents forts, ne sont pas encore résolus. C'est un chantier volontairement documenté à ce stade précoce, avec ses zones d'incertitude assumées.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="proj-nav">
+  <div class="wrap">
+    <a href="astral.html" class="proj-nav-link"><span class="mono">← Précédent</span><span>ASTRAL</span></a>
+    <a href="albatros.html" class="proj-nav-link next"><span class="mono">Suivant →</span><span>Albatros</span></a>
+  </div>
+</nav>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-left">
+      <div class="footer-mark"><svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><path d="M 32 4 C 44.15 4 54 13.85 54 26 C 54 31.8 51.77 37.08 48.12 41 C 49.34 38.28 50 35.27 50 32.1 C 50 20.5 40.6 11.1 29 11.1 C 25.4 11.1 22 12.02 19.05 13.63 C 22.9 8.03 27.7 4 32 4 Z" fill="currentColor"/><path d="M 32 60 C 19.85 60 10 50.15 10 38 C 10 32.2 12.23 26.92 15.88 23 C 14.66 25.72 14 28.73 14 31.9 C 14 43.5 23.4 52.9 35 52.9 C 38.6 52.9 42 51.98 44.95 50.37 C 41.1 55.97 36.3 60 32 60 Z" fill="currentColor"/></svg><span><span data-brand>BORAL</span> © <span data-year></span></span></div>
+      <p class="footer-tagline">Simulating the future. Building it today.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Navigation de pied de page">
+      <a href="entreprise.html">Entreprise</a>
+      <a href="technologies.html">Technologies</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="scroll-reveal.js"></script>
+<script src="specs-rail.js"></script>
+</body>
+</html>
